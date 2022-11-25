@@ -19,14 +19,15 @@ if (navigator.serviceWorker) {
  * This function will determine if the user is eligble for student pricing.
  */
 function myButtonClicked() {
-  var age = parseFloat(document.getElementById("age-number").value)
-  var day = parseString(document.getElementById("weekday").value)
+  var age = parseFloat(document.getElementById("persons-age").value)
+  var tuesday = document.getElementById("Tuesday").value
+  var thursday = document.getElementById("Thursday").checked
 
-  if (day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21)) {
+  if (tuesday == true || thursday == true || (age > 12 && age < 21)) {
     document.getElementById("discount-desider").innerHTML =
-      "<p>You are legible for student pricing.</p>"
+      "<p>You are legible for student discount.</p>"
   } else {
     document.getElementById("discount-desider").innerHTML =
-      "<p>You are not legible for student pricing.</p>"
+      "<p>You are not legible for student discount.</p>"
   }
 }
