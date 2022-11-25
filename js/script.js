@@ -1,13 +1,13 @@
-// Copyright (c) 2022 Sam Corbett All rights reserved
+// Copyright (c) 2022 Claire Bedrossian All rights reserved
 //
-// Created by: Sam Corbett
+// Created by: Claire Bedrossian
 // Created on: Nov 2022
 // This file contains the JS functions for index.html
 
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-Unit5-04-JS/sw.js", {
@@ -16,8 +16,17 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function will determine if the user is eligble for student pricing.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  var age = parseFloat(document.getElementById("age-number").value)
+  var day = parseString(document.getElementById("weekday").value)
+
+  if (day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21)) {
+    document.getElementById("discount-desider").innerHTML =
+      "<p>You are legible for student pricing.</p>"
+  } else {
+    document.getElementById("discount-desider").innerHTML =
+      "<p>You are not legible for student pricing.</p>"
+  }
 }
