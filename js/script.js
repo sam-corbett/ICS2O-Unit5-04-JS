@@ -24,9 +24,9 @@ function myButtonClicked() {
 
   if (weekdays == "Tuesday" || weekdays == "Thursday" || (age > 12 && age < 21)) {
     document.getElementById("discount-desider").innerHTML =
-      "<p>You are legible for student discount.</p>"
+      "<p>You are legible for student discount. It's 50% off the regular price!</p>"
   } else {
     document.getElementById("discount-desider").innerHTML =
-      "<p>You are not legible for student discount.</p>"
+      "<p>You are not legible for student discount. You must pay regular pricing.</p>"
   }
 }
