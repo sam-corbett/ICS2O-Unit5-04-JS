@@ -20,10 +20,9 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   var age = parseFloat(document.getElementById("persons-age").value)
-  var tuesday = document.getElementById("Tuesday").value
-  var thursday = document.getElementById("Thursday").checked
+  var weekdays = document.getElementById("weekdays").value
 
-  if (tuesday == true || thursday == true || (age > 12 && age < 21)) {
+  if (weekdays == "Tuesday" || weekdays == "Thursday" || (age > 12 && age < 21)) {
     document.getElementById("discount-desider").innerHTML =
       "<p>You are legible for student discount.</p>"
   } else {

@@ -4,11 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Discount Manager" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="sam-corbett" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
+    <title>Discount Manager</title>
     <link rel="canonical" href="https://sam-corbett/ICS2O-Unit5-04-JS/" />
     <link rel="manifest" href="/ICS2O-Unit5-04-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -28,43 +28,44 @@
     </noscript>
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css"
       media="none"
       onload="if(media!='all')media='all'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css"
       />
     </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first PWA</title>
+  <title>Discount Manager, JS</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">My first PWA</span>
+          <span class="mdl-layout-title">Discount Manager, JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <p></p>
         <img
-          src="./images/notebook-animation.svg"
+          src="./images/discountsvg.svg"
           alt="Computer"
           width="25%"
           height="25%"
         />
-        <p></p>
+        <h6>This program manages if you happen to earn a student discount, lets say for a museum...</h6>
+        <h6>You then enter today's day of the week and your current age to figure out if you are eligable to get it!</h6>
         <div
           class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
         >
-          <select class="mdl-textfield__input" id="Weekdays" name="Weekdays">
+          <select class="mdl-textfield__input" id="weekdays" name="weekdays">
             <option></option>
             <option value="Sunday">Sunday</option>
             <option value="Monday">Monday</option>
@@ -74,7 +75,7 @@
             <option value="Friday">Friday</option>
             <option value="Saturday">Saturday</option>
           </select>
-          <label class="mdl-textfield__label" for="Weekdays"
+          <label class="mdl-textfield__label" for="weekdays"
             >Select Todays Day Of The Week</label
           >
         </div>
