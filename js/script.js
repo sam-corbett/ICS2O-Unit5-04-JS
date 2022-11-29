@@ -22,7 +22,11 @@ function myButtonClicked() {
   var age = parseFloat(document.getElementById("persons-age").value)
   var weekdays = document.getElementById("weekdays").value
 
-  if (weekdays == "Tuesday" || weekdays == "Thursday" || (age > 12 && age < 21)) {
+  if (
+    weekdays == "Tuesday" ||
+    weekdays == "Thursday" ||
+    (age > 12 && age < 21)
+  ) {
     document.getElementById("discount-desider").innerHTML =
       "<p>You are legible for student discount. It's 50% off the regular price!</p>"
   } else {
